@@ -15,4 +15,4 @@ def get_english_meaning
   # code goes here
 end
 
-get_japanese_emoticon(:))
+get_japanese_emoticon(":)")

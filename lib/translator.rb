@@ -11,7 +11,7 @@ end
 
 def get_japanese_emoticon(file, english_emoticon)
   emoticons = load_library(file)
-  puts emoticons["get_emoticon"]
+  puts emoticons["get_emoticon"][english_emoticon]
   return 'Sorry, that emoticon was not found'
 end
 

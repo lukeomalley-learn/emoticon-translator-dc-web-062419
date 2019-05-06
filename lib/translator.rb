@@ -22,5 +22,5 @@ def get_english_meaning(japanese_emoticon)
   end
 end
 
-puts get_english_emoticon("(＾ｖ＾)")
+puts get_english_meaning("(＾ｖ＾)")
 "(＾ｖ＾)"

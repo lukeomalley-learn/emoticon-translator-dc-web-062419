@@ -23,7 +23,7 @@ def get_english_meaning(file, japanese_emoticon)
   end
   emoticons.each do |key, value|
     if value.include?(japanese_emoticon)
-      return value[0]
+      return key
     end
   end
 end

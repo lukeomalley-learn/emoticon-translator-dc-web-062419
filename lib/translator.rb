@@ -1,6 +1,7 @@
 require "yaml"
 
 def load_library(file_path)
+  lib = {get_emoticon = {}, get_meaning = {}}
   return YAML.load_file(file_path)
 end
 

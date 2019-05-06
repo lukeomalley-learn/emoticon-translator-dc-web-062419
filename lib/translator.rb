@@ -6,6 +6,9 @@ end
 
 def get_japanese_emoticon(file, english_emoticon)
   emoticons = load_library(file)
+  if !emoticons.value?(japanese_emoticon)
+    return 'Sorry, that emoticon was not found'
+  end
   emoticons.each do |key, value|
     if value.include?(english_emoticon)
       return value[1]

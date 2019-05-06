@@ -8,8 +8,7 @@ def get_japanese_emoticon(english_emoticon)
   emoticons = load_library('./emoticons.yml')
   emoticons.each do |key, value|
     if value.include?(english_emoticon)
-      puts key
-      puts value
+      puts value[1]
     end
   end
 end

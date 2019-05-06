@@ -21,7 +21,10 @@ end
 def get_english_meaning(file, japanese_emoticon)
   emoticons = load_library(file)
   if emoticons["get_meaning"][japanese_emoticon]
-  return 'Sorry, that emoticon was not found'
+    return emoticons["get_meaning"][japanese_emoticon]
+  else
+    return 'Sorry, that emoticon was not found'
+  end
 end
 
 puts get_japanese_emoticon('./emoticons.yml', ":)")

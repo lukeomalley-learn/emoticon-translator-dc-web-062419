@@ -13,8 +13,8 @@ def get_japanese_emoticon(file, english_emoticon)
   end
 end
 
-def get_english_meaning(japanese_emoticon)
-  emoticons = load_library('./emoticons.yml')
+def get_english_meaning(file, japanese_emoticon)
+  emoticons = load_library(file)
   emoticons.each do |key, value|
     if value.include?(japanese_emoticon)
       return value[0]

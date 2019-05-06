@@ -20,11 +20,7 @@ end
 
 def get_english_meaning(file, japanese_emoticon)
   emoticons = load_library(file)
-  emoticons.each do |key, value|
-    if value.include?(japanese_emoticon)
-      return key
-    end
-  end
+  if emoticons["get_meaning"][japanese_emoticon]
   return 'Sorry, that emoticon was not found'
 end
 

@@ -23,5 +23,3 @@ def get_english_meaning(file, japanese_emoticon)
   end
   return 'Sorry, that emoticon was not found'
 end
-
-puts get_japanese_emoticon("./emoticons.yml",":))")

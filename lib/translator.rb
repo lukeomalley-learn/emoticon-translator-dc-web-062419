@@ -7,7 +7,9 @@ end
 def get_japanese_emoticon(english_emoticon)
   emoticons = load_library('./emoticons.yml')
   emoticons.each do |key, value|
-    puts value
+    key.each do |emoticon|
+      puts emoticon
+    end
   end
 end
 

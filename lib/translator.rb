@@ -28,4 +28,4 @@ def get_english_meaning(file, japanese_emoticon)
   end
 end
 
-get_english_meaning("(Ｔ▽Ｔ)")
+puts get_english_meaning("(Ｔ▽Ｔ)")

@@ -4,8 +4,8 @@ def load_library(file_path)
   return YAML.load_file(file_path)
 end
 
-def get_japanese_emoticon(english_emoticon)
-  emoticons = load_library('./emoticons.yml')
+def get_japanese_emoticon(file, english_emoticon)
+  emoticons = load_library(file)
   emoticons.each do |key, value|
     if value.include?(english_emoticon)
       return value[1]

@@ -4,8 +4,9 @@ def load_library(file_path)
   return YAML.load_file(file_path)
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(english_emoticon)
+  
+  
 end
 
 def get_english_meaning

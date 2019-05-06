@@ -11,10 +11,7 @@ end
 
 def get_japanese_emoticon(file, english_emoticon)
   emoticons = load_library(file)
-  emoticons.each do |key, value|
-    if value.include?(english_emoticon)
-      return value[1]
-    end
+  puts emoticons["get_emoticon"]
   end
   return 'Sorry, that emoticon was not found'
 end
